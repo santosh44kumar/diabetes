@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<style>
+body {
+  <!--background-image: url('static/HomeScreen.jpg');-->
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
+</style>
+
+</head>
+
+<body>
+<center>
+	<h1>Check your Diabetes</h1>
+
+    
+    <form method="post" action="{{ url_for('home')}}">
+    	<input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /><br>
+        <input type="text" name="Glucose" placeholder="Glucose" required="required" /><br>
+	<input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" /><br>
+	<input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" /><br>
+        <input type="text" name="Insulin" placeholder="Insulin" required="required" /><br>
+	<input type="text" name="BMI" placeholder="BMI" required="required" /><br>
+	<input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /><br>
+        <input type="text" name="Age" placeholder="Age" required="required" /><br>
+        <input type="submit", value="Check">
+    </form>
+ 
+</center>
+</body>
+</html>
